@@ -1,0 +1,225 @@
+@charset "ISO-8859-1";
+
+
+/* Đặt tiêu đề vào góc trái */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h2 {
+    margin: 0;
+}
+
+/* Đặt menu vào góc phải */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Thiết lập font và màu chung */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+}
+
+header h2 {
+	font-size: 36px;
+	margin-left: 100px;
+}
+header h2 a{
+	text-decoration: none;
+	color: #fff;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+nav a:hover{
+	color: red;
+	transition: 0.3s all;
+}
+/* Featured Products */
+.featured-products {
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.product {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 10px;
+	text-align: center;
+	width: 250px;
+}
+
+.product img {
+	max-width: 100%;
+}
+
+.product h3 {
+	font-size: 18px;
+}
+
+.product p {
+	color: #888;
+	font-size: 14px;
+}
+
+.product button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Contact Section */
+.contact {
+	margin: 20px;
+	text-align: center;
+}
+
+.contact h2 {
+	font-size: 24px;
+}
+
+#contact-form {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+#contact-form button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Footer */
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+	.featured-products {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.product {
+		width: 100%;
+	}
+}
+
+/* Reset các margin và padding mặc định */
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+/* Thiết lập chiều cao 100% cho các phần tử cha của trang chủ */
+body,
+header,
+.featured-products,
+.contact,
+footer {
+	height: 100%;
+}
+
+/* Thiết lập background ảnh cho trang chủ và cân giữa nội dung */
+body {
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* Tạo hiệu ứng mờ cho nội dung trang chủ */
+.header,
+.featured-products,
+.contact {
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	margin: 20px;
+	text-align: center;
+	overflow: auto;
+}
+
+/* Hiệu ứng hover cho nút "Mua ngay" */
+.product button,
+#contact-form button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.product button:hover,
+#contact-form button:hover {
+	background-color: #555;
+}
